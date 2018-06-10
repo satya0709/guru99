@@ -2,9 +2,8 @@ package guru99_sessions;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +16,7 @@ public class test_1 {
 		WebDriver driver;
 		driver=new FirefoxDriver();
 		driver.get("http://www.demo.guru99.com/V4/");
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		driver.manage().window().maximize();
 		
 		File f= new File("E:\\New folder\\guru99_tests\\Test.properties");
